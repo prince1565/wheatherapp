@@ -46,6 +46,17 @@ Geolocation API: For getting the user's current location
 2.Improve error handling and user feedback.
 3.Securely manage API keys using environment variables.
 
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
