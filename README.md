@@ -1,3 +1,51 @@
+# Weather App
+Description
+This is a simple weather application built using React. It fetches and displays weather data for a user's current location or any specified city. The app leverages the OpenWeatherMap API to retrieve weather information and displays it in a user-friendly format. The app also includes a dark mode feature.
+
+#how to run the application locally.
+
+Prerequisites
+Node.js and npm installed on your machine.
+
+step 1: select and code editor open terminal and Clone the Repository
+commmand:- git clone https://github.com/prince1565/wheatherapp.git
+
+step 2: Install Dependencies
+command: npm install
+
+step 3: Set Up API Key
+Open Index.js and replace the API_KEY variable with your own OpenWeatherMap API key.
+   eg:- const API_KEY = 'paste your key here';
+
+step 4: Run the Application
+command:- npm start
+
+
+# Technologies Used
+HTML:- for building the structure of web page
+CSS:- for style the page 
+JS:- make functional the web page 
+React: For building the user interface using HTML,CSS,JS,API Integration.
+
+package:-
+Axios: For making HTTP requests to the OpenWeatherMap API.
+
+API TOOL:-
+OpenWeatherMap API: For fetching weather data.
+Geolocation API: For getting the user's current location
+
+
+# known issues or limitations.
+1. The API key is hardcoded and should ideally be managed securely, such as through environment variables.
+2. Error handling is basic; more detailed error messages could be provided for better user experience.
+3. The app relies on the Geolocation API, which may not work properly on all browsers or if the user denies location access.
+
+
+# Future Improvements
+1.Add more detailed weather information, such as forecasts.
+2.Improve error handling and user feedback.
+3.Securely manage API keys using environment variables.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
