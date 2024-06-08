@@ -1,38 +1,49 @@
-.App {
+.main{
+  height: 100vh;
+}
+.appname{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error{
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-display{
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.location{
+  display: inline-block;
+}
+.countryimage{
+  display: inline-block;
+  height: 4vh;
+  width: 2vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.cardinfo img{
+  height: 10vh;
+  width: 6vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width: 426px) {
+  .form-group{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .countryimage{
+    height: 6vh;
+    width: 9vw;
+  }
+  .cardbody{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .cardinfo img{
+    height: 12vh;
+    width: 16vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
 }
