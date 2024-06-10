@@ -8,7 +8,7 @@ import Spinner from './Spinner';
 
 export default function Home(props) {
     const API_KEY = '999578f3887427bd053ca64a0764e4f5'; 
-const mode1=props.mode;
+
 
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
@@ -35,6 +35,7 @@ const mode1=props.mode;
       setError(null);
     } catch (err) {
       setError('Failed to fetch weather data.');
+      setspinner(false);
     }
   };
 
@@ -47,6 +48,7 @@ const mode1=props.mode;
       setError(null);
     } catch (err) {
       setError('Failed to fetch weather data. Please check your input.');
+      setspinner(false);
     }
   };
 
@@ -64,7 +66,7 @@ const mode1=props.mode;
 <div class="position-absolute top-0 end-0">
 
 <div className={`form-check form-switch  text-${props.mode==='light'?'dark':'light'} `}>
-  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode}/>
+  <input className="form-check-input border-1 shadow-none " type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode}/>
   <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.text}</label>
 </div>
 
@@ -75,9 +77,9 @@ const mode1=props.mode;
 
       <SearchForm onSearch={handleSearch} />
       <div className="col-12 col-md-6 mx-auto mt-4">
-      {error && <h5 className="error">{error}</h5>}
+      {error && <h5 className="error"  style={{color:props.mode==='dark'?'white':'#042743' }}>{error}</h5>}
       </div>
-      <div className="col-12 col-md-6 mx-auto mt-4">
+      <div className="col-4 col-md-1 mx-auto mt-4">
       {spinner===true?<Spinner/>:""}
       </div>
       <div className="col-sm-12 my-4">

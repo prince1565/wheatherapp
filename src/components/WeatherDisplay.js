@@ -25,26 +25,29 @@ function WeatherDisplay(props) {
       <div class="container my-5">
         <div class="row cardinfo" style={{backgroundColor:props.mode==='dark'?'#042743':'white' }} >
             <div class="col-md-4 cardbody" style={{backgroundColor:props.mode==='dark'?'#042743':'white' }}>
-                <div class="card" >
+                <div class="card" style={{backgroundColor:props.mode==='dark'?'#6A89AA':'white' }} >
                     <img src={windspeed} class=" mx-auto d-block" alt="Card Image 1"/>
                     <div class="card-body">
-                        <h5 class="card-title">{wind.speed}</h5>
+                    <h5 class="card-title"  style={{color:props.mode==='dark'?'white':'#042743' }}>Wind Speed</h5>
+                        <h5 class="card-title"  style={{color:props.mode==='dark'?'white':'#042743' }}>{wind.speed}</h5>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 cardbody">
-                <div class="card">
+                <div class="card" style={{backgroundColor:props.mode==='dark'?'#6A89AA':'white' }}>
                     <img src={humidity} class="mx-auto d-block" alt="Card Image 2"/>
-                    <div class="card-body">
-                        <h5 class="card-title">{main.humidity}</h5>
+                    <div class="card-body"  >
+                    <h5 class="card-title" style={{color:props.mode==='dark'?'white':'#042743' }}>Humidity</h5>
+                        <h5 class="card-title" style={{color:props.mode==='dark'?'white':'#042743' }}>{main.humidity}</h5>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 cardbody">
-                <div class="card">
+                <div class="card" style={{backgroundColor:props.mode==='dark'?'#6A89AA':'white' }} >
                     <img src={cloud} class="mx-auto d-block" alt="Card Image 3"/>
                     <div class="card-body">
-                        <h5 class="card-title">{clouds.all}%</h5>
+                    <h5 class="card-title" style={{color:props.mode==='dark'?'white':'#042743' }}>Rain chnace</h5>
+                        <h5 class="card-title" style={{color:props.mode==='dark'?'white':'#042743' }}>{clouds.all}%</h5>
                     </div>
                 </div>
             </div>
